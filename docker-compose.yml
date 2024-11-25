@@ -1,5 +1,5 @@
 # This version must match the MAKE_DC_VERSION value below
-version: "3.7"
+#version: "3.7"
 
 volumes:
   pgdata:
@@ -111,6 +111,8 @@ services:
       MAX_ZOOM: ${MAX_ZOOM}
       # Control tilelive-copy threads
       COPY_CONCURRENCY: ${COPY_CONCURRENCY}
+      # Control uv_threadpool_size
+      UV_THREADPOOL_SIZE: ${UV_THREADPOOL_SIZE}
       #
       PGDATABASE: ${PGDATABASE:-openmaptiles}
       PGUSER: ${PGUSER:-openmaptiles}

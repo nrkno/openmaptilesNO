@@ -7,7 +7,7 @@ echo "--------------------------------------------------------------------------
 echo "====> : Run download area "
 
 #make download-geofabrik area=norway
-make destroy-db
+#make destroy-db
 #make stop-db
 make clean-unnecessary-docker
 make remove-docker-images
@@ -29,7 +29,7 @@ echo " "
 echo "-------------------------------------------------------------------------------------"
 echo "====> : import natural earth data  "
 
-make import-data 
+#make import-data 
 
 echo "...complete!"
 
@@ -37,7 +37,7 @@ echo " "
 echo "-------------------------------------------------------------------------------------"
 echo "====> : import osm  "
 
-make import-osm area=norway
+#make import-osm area=norway
 
 echo "... Complete!"
 
@@ -45,7 +45,7 @@ echo " "
 echo "-------------------------------------------------------------------------------------"
 echo "====> : import wikidata  "
 
-make import-wikidata 
+#make import-wikidata 
 
 echo "... Complete!"
 
@@ -53,7 +53,7 @@ echo " "
 echo "-------------------------------------------------------------------------------------"
 echo "====> : import sql  "
 
-make import-sql
+#make import-sql
 
 echo "... Complete!"
 
