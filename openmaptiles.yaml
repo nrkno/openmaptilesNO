@@ -2,7 +2,7 @@ tileset:
   layers:
     - layers/water/water.yaml # water -ocean, lakes and big rivers, remove natural earth sections. same as landcover
     - layers/waterway/waterway.yaml # waterway - rivers and centerlines on lakes.
-    #- layers/landcover/landcover.yaml # landcover - woods, sand, glacier, rock ... natural areas.
+    - layers/landcover/landcover.yaml # landcover - woods, sand, glacier, rock ... natural areas.
     #- layers/landuse/landuse.yaml # modified areas - parks, farmland, grass, golf cources ....
     ##- layers/mountain_peak/mountain_peak.yaml                # needed?
     #- layers/park/park.yaml                                  # national parks - nice to have concider if needed?
@@ -23,7 +23,7 @@ tileset:
   attribution: '<a href="https://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'
   center: [0, 0, 1]
   bounds: [-180.0, -85.0511, 180.0, 85.0511]
-  maxzoom: 13
+  maxzoom: 14
   minzoom: 0
   pixel_scale: 256
   languages:
