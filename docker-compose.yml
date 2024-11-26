@@ -24,6 +24,9 @@ services:
       - postgres
     ports:
       - "${PGPORT:-5432}:${PGPORT:-5432}"
+    depends_on:
+      db:
+        condition: service_healthy
     env_file: .env
     environment:
       # postgress container uses old variable names
