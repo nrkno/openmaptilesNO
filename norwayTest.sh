@@ -11,7 +11,7 @@ echo "====> : Run download area "
 make stop-db
 #make clean-unnecessary-docker
 #make remove-docker-images
-#make refresh-docker-images
+make refresh-docker-images
 
 echo "... complete!"
 
