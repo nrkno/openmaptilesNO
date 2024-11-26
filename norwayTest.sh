@@ -7,11 +7,12 @@ echo "--------------------------------------------------------------------------
 echo "====> : Run download area "
 
 #make download-geofabrik area=norway
-make destroy-db
-make stop-db
-make clean-unnecessary-docker
+#make destroy-db
+#make stop-db
+
+#make clean-unnecessary-docker
 #make remove-docker-images
-make refresh-docker-images
+#make refresh-docker-images
 
 
 echo "... complete!"
