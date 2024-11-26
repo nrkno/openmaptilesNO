@@ -20,8 +20,8 @@ echo "--------------------------------------------------------------------------
 echo "====> : Run Cleanup and initiation"
 
 make clean
-
 make 
+make start-update-osm
 
 echo "... complete!"
 
