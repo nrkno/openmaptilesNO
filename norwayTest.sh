@@ -19,9 +19,9 @@ echo " "
 echo "-------------------------------------------------------------------------------------"
 echo "====> : Run Cleanup and initiation"
 
-#make clean
+make clean
 
-#make 
+make 
 
 echo "... complete!"
 
