@@ -1,5 +1,5 @@
 # This version must match the MAKE_DC_VERSION value below
-#version: "3.7"
+# version: "3.7"
 
 volumes:
   pgdata:
@@ -24,14 +24,13 @@ services:
       - "${PGPORT:-5432}:${PGPORT:-5432}"
     env_file: .env
     environment:
-    - THREADS=8
       # postgress container uses old variable names
+      THREADS: 8
       POSTGRES_DB: ${PGDATABASE:-openmaptiles}
       POSTGRES_USER: ${PGUSER:-openmaptiles}
       POSTGRES_PASSWORD: ${PGPASSWORD:-openmaptiles}
       PGPORT: ${PGPORT:-5432}
       TILE_TIMEOUT: 3600000
-    
 
   import-data:
     image: "openmaptiles/import-data:${TOOLS_VERSION}"
