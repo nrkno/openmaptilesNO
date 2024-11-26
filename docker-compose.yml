@@ -14,7 +14,7 @@ services:
     command: postgres -c 'config_file=/etc/postgresql/postgresql.conf'
     # Use "command: postgres -c jit=off" for PostgreSQL 11+ because of slow large MVT query processing
     # Use "shm_size: 512m" if you want to prevent a possible 'No space left on device' during 'make generate-tiles-pg'
-    shm_size: 8g
+    shm_size: 8GB
     volumes:
       - pgdata:/var/lib/postgresql/data
       - ./etc/postgresql/postgresql.conf:/etc/postgresql/postgresql.conf
@@ -101,7 +101,7 @@ services:
       - type: tmpfs
         target: /dev/shm
         tmpfs:
-          size: 16000000000 # ~16gb
+          size: 268435456 #256MB
     networks:
       - postgres
     env_file: .env
